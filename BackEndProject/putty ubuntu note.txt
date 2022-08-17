@@ -1,0 +1,53 @@
+login:
+ubuntu
+
+application update:
+sudo apt-get update
+
+install git:
+sudo apt install git
+
+
+install java-JDK:
+sudo apt install default-jdk
+
+check java version:
+java --version
+if is not install run bellow code
+sudo apt install default-jdk
+
+
+install maven:
+sudo apt install maven
+
+create folder:
+mkdir code (u is my directory) gmh4a3
+
+Go to the file and foledr:
+cd code/
+cd getMeSocial_Service
+
+
+git:
+git clone https://github.com/BasantaGhimire/getMeSocial_Service.gitgit 
+
+make sure get clone or note:
+ll
+run project:
+sudo mvn spring-boot: run
+
+
+run contunue:
+sudo nohup mvn spring-boot:run>log.txt &
+
+show which programs are run:
+sudo netstat -ntpl
+
+Runagain:
+login: ubuntu
+sudo netstate -ntpl
+sudo kill -9 process no (kill mins stop the runing program)
+
+
+if you change code and pull in the ubuntu:
+git pull
