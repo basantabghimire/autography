@@ -1,0 +1,15 @@
+<p>profile works!</p>
+<h1>{{title}}</h1> <!-- interpolation{{}} --> 
+<img [src]="imageUrl" width="300" alt="image1"> <!-- property binding -->
+<br>
+<button (click)="incrementCount()">Click To increment view</button>
+<p>Counter:{{viewCount}}</p>
+
+
+<!-- two way  -->
+<div>
+    <input type="text" [(ngModel)]="name">
+    <p>
+        Hello, {{name}}
+    </p>
+</div>

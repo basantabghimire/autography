@@ -1,0 +1,18 @@
+
+<a routerLink="../profile">Login</a>
+
+<div class="container">
+  <div class="card">
+    <mat-form-field appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com"  required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <button>
+    <a mat-raised-button color="Primary" routerLink="../profile" mat-raised-button >Login</a>
+    </button> 
+  </div>  
+
+  
+    
+</div>

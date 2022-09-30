@@ -1,0 +1,26 @@
+<app-banner></app-banner>
+
+<div class="text-left">
+    <div>
+        <h1>{{title}}</h1>
+    </div>
+<div>
+    <mat-card class="r-card">
+       <button (click)="onAlbumClick()" class="my-button" routerLink="/create">
+            <img [src]="[album0.imageUrl]" alt="1">
+            <h1>{{album0.albumName}}</h1> 
+            <button>{{album0.button0}}</button> |
+            <button>{{album0.button1}}</button> |
+            <button mat-button (click)="likeCount()">Like {{viewCount}}</button>
+            <button mat-button>SHARE</button>
+            <hr>
+            <mat-form-field class="example-form-field" appearance="fill">
+                <mat-label>comment</mat-label>
+                <input  matInput type="text">
+            </mat-form-field>
+        </button>
+    </mat-card>
+</div>
+</div>
+
+<app-footer></app-footer>

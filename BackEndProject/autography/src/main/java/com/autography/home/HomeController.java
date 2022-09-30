@@ -1,5 +1,6 @@
-package com.autography;
+package com.autography.home;
 
+//import com.autography.cloth.ProductService;
 import com.autography.model.Inquiry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,10 +10,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class AutographController {
+public class HomeController {
 
     @Autowired
-    private AutographService autographService;
+    private HomeService homeService;
 
     @GetMapping("/")
     public String index(Model model){
@@ -32,14 +33,14 @@ public class AutographController {
 
     @GetMapping("/products")
     public String products(Model model){
-        model.addAttribute("products",autographService.getProducts());
+        model.addAttribute("products",homeService.getProducts());
         return "products";
     }
 
     @PostMapping("/products")
     public String searchProducts(Model model, @ModelAttribute Inquiry inquiry){
         String name=(inquiry.getSearchString());
-        model.addAttribute("products",autographService.searchProducts(name));
+        model.addAttribute("products",homeService.searchProducts(name));
         return "products";
     }
 
@@ -55,7 +56,6 @@ public class AutographController {
 
     @GetMapping("/report")
     public String report(Model model){
-        model.addAttribute("product",new ProductService());
         return "report";
     }
 }

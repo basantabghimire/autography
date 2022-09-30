@@ -1,0 +1,144 @@
+body{
+    background-color:#1b5deb;
+    margin: auto;
+
+}
+.b-wrapper{
+  background-color:#e6faff;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding: 2%;
+}
+.b-heading{
+    text-align: inherit;
+}
+.b-heading-right{
+    display: flex;
+    flex: 3;
+    align-items: center;
+    justify-content: right;
+    font-weight: 400;
+    margin-top: -5%;
+
+}
+.n-wrapper{
+    height: 4vh;
+    width: auto;
+    display:flex;
+    justify-content: space-between;
+    background: rgb(234, 234, 241);  
+    margin: auto;
+    margin-top: 2%;
+    padding: 1%;
+    z-index: 10;
+}
+.t-wrapper{
+    line-height: .5em;
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.sk-wrapper{
+    margin-top: 8%;
+    line-height: 1.5em;
+}
+.tk-wrapper{
+    line-height: 1.5em;
+    margin-top: 2%;
+}
+.e-wrapper{
+    margin-top: 2%;
+    line-height: 1.5em; 
+}
+.wrapper-add{
+    display:flex;
+}
+.wrapper-date{
+    display:flex;
+    justify-content: right;
+    margin-top: -2%;
+}
+.rc-wrapper{
+    margin-top:auto;
+    
+    
+}
+.rc-wrapper>span{
+    display: -ms-inline-flexbox;
+    line-height: 1.5em;
+    margin-top: -5%;
+    font-weight:normal;
+}
+.wrapper{
+    margin-top: 2%;
+    line-height: 1.5em;
+    
+}
+table {
+    width: 100%;
+}
+th, td{
+    border: 1px solid;
+    padding: 8px;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+th {
+    background-color: #0476aa;
+    color: white;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .f-wrapper{   
+    padding: 10px;
+    margin: 5%;   
+  }
+  .l-wrapper{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  .t-wrapper{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  span{
+    font-weight:bold;
+  }

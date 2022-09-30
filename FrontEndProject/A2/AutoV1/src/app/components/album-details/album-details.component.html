@@ -1,0 +1,63 @@
+<app-banner></app-banner>
+<div class="text-left">
+    <mat-card>
+    <div>
+        <h1>{{title}}</h1>
+        <h2>{{title1}}</h2>
+    </div>
+    <div class>
+        <div>
+            
+            <h4>Select viewer</h4>
+            <hr>
+            <mat-form-field appearance="fill">
+                <mat-label>Edit viewer</mat-label>
+                <mat-select [formControl]="albumPrivacy" multiple>
+                    <mat-select-trigger>
+                        {{albumPrivacy.value?.[0] || ''}}
+                        <span *ngIf="(albumPrivacy.value?.length || 0) > 1" class="example-additional-selection">
+                            (+{{(albumPrivacy.value?.length || 0) - 1}} {{albumPrivacy.value?.length === 2 ? 'other' : 'others'}})
+                        </span>
+                    </mat-select-trigger>
+                    <mat-option *ngFor="let albumPrivacy of albumPrivacyList" [value]="albumPrivacy">{{albumPrivacy}}</mat-option>
+                </mat-select>
+            </mat-form-field>            
+        </div>
+        <hr>
+
+        <div>
+            <Form action="post" class="field" appearance="outline">               
+                <mat-label for="file"></mat-label>
+                <input 
+                type="file"
+                id="file"           
+                >
+            </Form>
+        </div>
+        <hr>
+        <div>
+            <mat-form-field class="example-form-field" appearance="fill">
+                <mat-label>Album Name</mat-label>
+                <input  matInput type="text" [(ngModel)]="value">
+            </mat-form-field>
+            <hr>
+            <button>Create Album</button>            
+        </div>
+    </div>
+</mat-card>
+</div>
+<div>
+    <mat-card class="r-card">
+       <button (click)="onAlbumClick()" class="my-button" routerLink="/create">
+        <img [src]="[album0.imageUrl]" alt="1">
+        <h1>{{album0.albumName}}</h1>      
+    </button>
+
+    <button (click)="onAlbumClick()" class="my-button" routerLink="/create">
+        <img [src]="[album0.imageUrl]" alt="1">
+        <h1>{{album0.albumName}}</h1>      
+    </button>
+
+    </mat-card>
+</div>
+<app-footer></app-footer>

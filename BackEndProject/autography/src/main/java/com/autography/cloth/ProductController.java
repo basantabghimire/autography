@@ -1,4 +1,4 @@
-package com.autography;
+/*package com.autography.cloth;
 
 import com.autography.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,4 +32,4 @@ public class ProductController {
 
 
 
-}
+}*/

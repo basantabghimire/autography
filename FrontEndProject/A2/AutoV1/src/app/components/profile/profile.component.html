@@ -1,0 +1,30 @@
+<app-banner></app-banner>
+
+
+<div class="p-wrapper">
+    <h1>{{title}}</h1> <!-- interpolation{{}} --> 
+    <mat-toolbar class="mtool">
+        <button routerLink="/albums">Album</button>|
+        <button routerLink="/upload">Photo</button> |
+        <button>Edite Profile</button>
+    </mat-toolbar>
+    <br>
+<img [src]="imageUrl" width="300" alt="image1"> <!-- property binding -->
+<br>
+<button (click)="incrementCount()">Click To increment view</button>
+<p>Counter:{{viewCount}}</p>
+
+
+<!-- two way  -->
+<div>
+    <input type="text" [(ngModel)]="name">
+    <p>
+        Hello, {{name}}
+    </p>
+</div>
+
+</div>
+<app-footer></app-footer>
+
+
+

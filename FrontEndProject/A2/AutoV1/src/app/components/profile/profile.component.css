@@ -1,0 +1,17 @@
+.p-wrapper{
+    margin: 2%;
+    padding: .5%;
+    max-width: 25%;
+    border: 2px solid silver;
+    background-color: rgba(163, 98, 68, 0.151);
+}
+.mtool{
+    background-color: rgba(0, 0, 0, 0.158);
+}
+.cPicture{
+    border: 5px solid rgba(192, 192, 192, 0.274);;
+    border-width: 1px;
+    text-align: center;
+    margin: 2em 0;
+    background-color: rgba(192, 192, 192, 0.055);
+}

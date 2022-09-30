@@ -45,7 +45,7 @@ sudo netstat -ntpl
 
 Runagain:
 login: ubuntu
-sudo netstate -ntpl
+sudo netstat -ntpl
 sudo kill -9 process no (kill mins stop the runing program)
 
 

@@ -1,0 +1,15 @@
+https://angular.io/
+
+https://material.angular.io/
+
+https://ng-bootstrap.github.io/
+
+instal angular: https://angular.io/cli
+build application: ng new my-first-project
+
+go to vscode: code .
+run application: ng serve
+
+	create component:ng g component componentName
+	or		    :ng g c componentName
+			

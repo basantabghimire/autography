@@ -1,0 +1,12 @@
+.footer {
+    width: 100%;
+    bottom: 0;
+    padding: 2%;
+    position: absolute;
+    color: silver;
+    background-color: black;
+    border: 2%;
+    outline: auto;
+    outline-color:rgba(215, 212, 238, 0.993);
+    outline-style:outset;
+}

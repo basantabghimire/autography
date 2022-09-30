@@ -1,0 +1,30 @@
+.banner-span{
+    margin-right: 88%;
+  }
+  .nav-heading{
+    font-size: xx-large;
+    font-weight: bolder;
+    color:aliceblue;
+    display:contents;
+  }
+  .banner-span>a{
+    font-weight: bold;
+  }
+
+  .mat-toolbar{
+    padding: 2%;
+    border: 2%;
+    outline: auto;
+    outline-color: silver;
+    outline-style:outset;
+  }
+  .nav{
+    background-color: black;
+    border: 2%;
+    outline: auto;
+    outline-color:rgba(215, 212, 238, 0.993);
+    outline-style:outset;
+  }
+  .micon{
+    color: aliceblue;
+  }

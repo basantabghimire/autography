@@ -1,0 +1,37 @@
+<app-banner></app-banner>
+
+<div class="my-wrapper" appearance="outline">
+    <h1>{{title}}</h1>
+    <button (click)="onAlbumClick()" class="my-button" routerLink="/create">
+        <mat-icon>{{album0.createAlbum}}</mat-icon>
+        <h1>{{album0.albumName}}</h1>      
+    </button>
+    <button (click)="onPhotoClick()" class="my-button">
+        <img [src]="[album1.imageUrl]" alt="1">
+        <span>{{album1.albumName}}</span>      
+    </button>
+    <button (click)="onPhotoClick()" class="my-button">
+        <img [src]="[album2.imageUrl]" alt="2">
+        <span>{{album2.albumName}}</span>
+    </button>
+    <button (click)="onPhotoClick()" class="my-button">
+        <img [src]="[album3.imageUrl]" alt="3">
+        <span>{{album3.albumName}}</span>
+    </button>
+    <button (click)="onPhotoClick()" class="my-button">
+        <img [src]="[album4.imageUrl]" alt="4">
+        <span>{{album4.albumName}}</span>
+    </button>
+    <button (click)="onPhotoClick()" class="my-button">
+        <img [src]="[album5.imageUrl]" alt="5">
+        <span>{{album5.albumName}}</span>
+    </button>
+    <button (click)="onPhotoClick()" class="my-button">
+        <img [src]="[album6.imageUrl]" alt="6">
+        <span>{{album6.albumName}}</span>
+    </button>
+    <button (click)="onPhotoClick()" class="my-button">
+        <img [src]="[album6.imageUrl]" alt="7">
+        <span>{{album6.albumName}}</span>
+    </button>
+</div>

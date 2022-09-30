@@ -1,0 +1,24 @@
+mat-card{
+    border: 4px solid silver;
+    border-style: groove;
+    background-color: rgba(192, 192, 192, 0.349);
+    max-width: 400px;
+    min-height: 800px;
+    margin-right: 15%;
+   
+}
+.r-card{
+    margin-left: 1%;
+    margin-top: 1.5%;
+    max-width: 1500px;
+    min-height: 700px;
+}
+span{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.text-left{
+    margin-left: 5%;
+    margin-top: 5%;
+}

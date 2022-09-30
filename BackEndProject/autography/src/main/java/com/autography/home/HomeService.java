@@ -1,4 +1,4 @@
-package com.autography;
+package com.autography.home;
 
 import com.autography.model.Product;
 import org.springframework.stereotype.Service;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class AutographService {
+public class HomeService {
 
 
 
